@@ -30,7 +30,7 @@ let package = Package(name: "FullMaterialLoader",
                                   .iOS(.v10)],
                       products: [.library(name: "FullMaterialLoader",
                                           targets: ["FullMaterialLoader"])],
-                      targets: [.target(name: "FullMaterialLoader", dependencies: []),
-],
+                      dependencies: [.package(path: "https://github.com/sathishvgs/FullMaterialLoader.git"),
+                      ],
                       
                       swiftLanguageVersions: [.v5,.v4,.v4_2])
