@@ -27,11 +27,10 @@ import PackageDescription
 
 let package = Package(name: "FullMaterialLoader",
                       platforms: [.macOS(.v10_12),
-                                  .iOS(.v10),
-                                  .tvOS(.v10),
-                                  .watchOS(.v3)],
+                                  .iOS(.v10)],
                       products: [.library(name: "FullMaterialLoader",
                                           targets: ["FullMaterialLoader"])],
-                      targets: [.target(name: "FullMaterialLoader",
-                                        path: "./FullMaterialLoader")],
+                      targets: [.target(name: "FullMaterialLoader", dependencies: []),
+],
+                      
                       swiftLanguageVersions: [.v5,.v4,.v4_2])
