@@ -33,5 +33,5 @@ let package = Package(name: "FullMaterialLoader",
                       products: [.library(name: "FullMaterialLoader",
                                           targets: ["FullMaterialLoader"])],
                       targets: [.target(name: "FullMaterialLoader",
-                                        path: "FullMaterialLoader")],
-                      swiftLanguageVersions: [.v5])
+                                        path: "./FullMaterialLoader")],
+                      swiftLanguageVersions: [.v5,.v4,.v4_2])
